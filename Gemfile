@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.1'
 gem 'mysql2'
+gem 'sass', '3.1.2'
 
 group :development, :test do
   gem 'rspec', '2.6.0.rc6'
