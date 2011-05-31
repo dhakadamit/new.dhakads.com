@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.1'
 gem 'mysql2'
 gem 'sass', '3.1.2'
+gem 'jammit', '0.6.3'
 
 group :development, :test do
   gem 'rspec', '2.6.0.rc6'
@@ -20,4 +21,5 @@ group :development, :test do
   gem 'pickle', :git => "git://github.com/ginettev/pickle.git"
   gem 'launchy', '0.3.7'
 end
+
 
