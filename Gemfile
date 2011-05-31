@@ -17,5 +17,6 @@ group :development, :test do
   gem 'selenium-client'
   gem 'selenium-webdriver'
   gem 'pickle', :git => "git://github.com/ginettev/pickle.git"
+  gem 'launchy', '0.3.7'
 end
 
