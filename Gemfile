@@ -4,10 +4,6 @@ gem 'rails', '3.0.1'
 gem 'mysql2'
 
 group :development, :test do
-
-end
-
-group :test do
   gem 'rspec', '2.6.0.rc6'
   gem 'rspec-rails', '2.6.0.rc6'
   gem 'cucumber', '0.10.2'
@@ -22,3 +18,4 @@ group :test do
   gem 'selenium-webdriver'
   gem 'pickle', :git => "git://github.com/ginettev/pickle.git"
 end
+
