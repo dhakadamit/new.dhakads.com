@@ -349,3 +349,34 @@ body {
 .clearfix {
   zoom: 1;
 }
+
+
+/*
+Sticky Footer Solution
+by Steve Hatcher
+http://stever.ca http://www.cssstickyfooter.com
+*/
+
+html, body, #main {height: 100%; margin-top: 0px; margin-bottom: 0px;}
+
+body { margin: 0px;}
+#main { height: auto; }
+
+/* must be same height as the footer */
+#content { overflow: auto; padding-bottom: 150px; min-height: 650px; }
+
+#footer {
+	position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear: both;
+}
+
+/*Opera Fix*/
+body:before { /* thanks to Maleika (Kohoutec)*/
+	content: "";
+	height:100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px; /* thank you Erik J */
+}

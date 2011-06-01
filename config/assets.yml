@@ -1,13 +1,16 @@
 # for development
-package_assets: <%= ENV['RAILS_ENV'] == 'test' ? 'off': 'on' %>
-javascript_compressor: closure
-compressor_options:
-  compilation_level: "SIMPLE_OPTIMIZATIONS"
-
 javascripts:
   lib:
     - public/javascripts/lib/jquery-1.6.1.js
 
+  app:
+
 stylesheets:
   global:
     - public/stylesheets/960.css
+
+  app:
+    - public/stylesheets/header_footer.css
+    - public/stylesheets/global.css
+    - public/stylesheets/constants.css
+

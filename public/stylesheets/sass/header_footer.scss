@@ -1,0 +1,25 @@
+@import "constants";
+
+#header {
+  height: 100px;
+  border: {
+    style: solid;
+    top: {
+      width: 3px;
+    }
+    bottom: {
+      width: 3px;
+    }
+    left: {
+      style: none;
+    }
+    right: {
+      style: none;
+    }
+    color: $gray-dark;
+  }
+}
+
+#footer {
+  background-color: $gray-dark;
+}

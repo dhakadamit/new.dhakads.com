@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NewDhakadsCom</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <title><%= yield :title %></title>
+  <%= include_stylesheets :global, :app %>
+  <%= include_javascripts :lib, :app %>
   <%= csrf_meta_tag %>
 </head>
 <body>
 
-<%= yield %>
+<div id="main">
+
+  <%= render :partial => "shared/header"%>
+
+  <div id="content">
+    <%= yield %>
+  </div>
+
+  <%= render :partial => "shared/footer"%>
+
+</div>
 
 </body>
 </html>
