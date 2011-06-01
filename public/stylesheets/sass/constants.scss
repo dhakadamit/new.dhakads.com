@@ -1,1 +1,11 @@
+@font-face {
+  font-family: 'OrbitronMedium';
+  src: url('fonts/orbitron-medium-webfont.eot');
+  src: url('fonts/orbitron-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/orbitron-medium-webfont.woff') format('woff'),
+       url('fonts/orbitron-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $gray-dark: #333333;

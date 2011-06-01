@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'OrbitronMedium';
+  src: url("fonts/orbitron-medium-webfont.eot");
+  src: url("fonts/orbitron-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/orbitron-medium-webfont.woff") format("woff"), url("fonts/orbitron-medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 #header {
   height: 100px;
   border-style: solid;
@@ -6,6 +13,9 @@
   border-left-style: none;
   border-right-style: none;
   border-color: #333333; }
+  #header #logo {
+    padding: 20px 0px 20px 0px;
+    font-family: 'OrbitronMedium'; }
 
 #footer {
   background-color: #333333; }
