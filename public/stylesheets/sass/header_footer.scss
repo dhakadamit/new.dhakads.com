@@ -3,25 +3,16 @@
 #header {
   height: 100px;
   border: {
-    style: solid;
-    top: {
-      width: 3px;
-    }
-    bottom: {
-      width: 3px;
-    }
-    left: {
-      style: none;
-    }
-    right: {
-      style: none;
-    }
-    color: $gray-dark;
+    top: 3px solid $gray-dark;
+    bottom: 3px solid $gray-dark;
   }
 
   #logo {
     padding: 20px 0px 20px 0px;
-    font-family: 'OrbitronMedium';
+    font: {
+     family: 'OrbitronMedium';
+     size: $bebas-big;
+    }
   }
 }
 

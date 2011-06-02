@@ -1,21 +1,20 @@
 @font-face {
   font-family: 'OrbitronMedium';
-  src: url("fonts/orbitron-medium-webfont.eot");
-  src: url("fonts/orbitron-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/orbitron-medium-webfont.woff") format("woff"), url("fonts/orbitron-medium-webfont.ttf") format("truetype");
+  src: url("/fonts/orbitron-regular-webfont.eot");
+  src: url("/fonts/orbitron-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/orbitron-regular-webfont.woff") format("woff"), url("/fonts/orbitron-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
+/*colors*/
+/*font-sizes*/
 #header {
   height: 100px;
-  border-style: solid;
-  border-top-width: 3px;
-  border-bottom-width: 3px;
-  border-left-style: none;
-  border-right-style: none;
-  border-color: #333333; }
+  border-top: 3px solid #333333;
+  border-bottom: 3px solid #333333; }
   #header #logo {
     padding: 20px 0px 20px 0px;
-    font-family: 'OrbitronMedium'; }
+    font-family: 'OrbitronMedium';
+    font-size: 48px; }
 
 #footer {
   background-color: #333333; }

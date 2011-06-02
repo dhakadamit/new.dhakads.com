@@ -1,11 +1,16 @@
 @font-face {
   font-family: 'OrbitronMedium';
-  src: url('fonts/orbitron-medium-webfont.eot');
-  src: url('fonts/orbitron-medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/orbitron-medium-webfont.woff') format('woff'),
-       url('fonts/orbitron-medium-webfont.ttf') format('truetype');
+  src: url('/fonts/orbitron-regular-webfont.eot');
+  src: url('/fonts/orbitron-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/orbitron-regular-webfont.woff') format('woff'),
+       url('/fonts/orbitron-regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
+/*colors*/
 $gray-dark: #333333;
+
+/*font-sizes*/
+$bebas-big: 48px;
+$bebas-small: 11px;
