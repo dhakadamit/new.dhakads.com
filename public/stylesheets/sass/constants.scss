@@ -18,6 +18,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('/fonts/droidsans-webfont.eot');
+    src: url('/fonts/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/droidsans-webfont.woff') format('woff'),
+         url('/fonts/droidsans-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /*colors*/
 $gray-darkest: #333333;
@@ -27,3 +38,6 @@ $white: #ffffff;
 /*font-sizes*/
 $bebas-big: 48px;
 $bebas-small: 11px;
+$small: 11px;
+
+$bebas-word-spacing: 2px;

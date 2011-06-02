@@ -21,10 +21,11 @@
 
   ul.navigation {
     float: left;
-    margin-top: 30px;
+    margin: 30px 0px 0px 0px;
     padding: 0px 150px 0px 0px;
     border-bottom: 1px solid $gray-darker;
     height: 20px;
+    word-spacing: $bebas-word-spacing;
 
     font: {
       size: $bebas-small;
@@ -52,4 +53,34 @@
       }
     }
   }
+
+  .credit_label {
+    margin-top: 30px;
+    padding: 0px 10px 0px 150px;
+    border-bottom: 1px solid $gray-darker;
+    height: 20px;
+    word-spacing: $bebas-word-spacing;
+    color: $white;
+
+    font: {
+      size: $bebas-small;
+      family: 'BebasRegular';
+    }
+  }
+
+  .credit {
+    padding: 10px 15px 0px 150px;
+    color: $gray-darker;
+
+    font: {
+      size: $small;
+      family: 'DroidSansRegular';
+    }
+
+    .label {
+      color: $white;
+    }
+  }
+
+
 }
