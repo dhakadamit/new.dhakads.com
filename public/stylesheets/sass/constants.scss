@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'OrbitronMedium';
+  font-family: 'OrbitronRegular';
   src: url('/fonts/orbitron-regular-webfont.eot');
   src: url('/fonts/orbitron-regular-webfont.eot?#iefix') format('embedded-opentype'),
        url('/fonts/orbitron-regular-webfont.woff') format('woff'),
@@ -8,8 +8,21 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('/fonts/bebas-webfont.eot');
+    src: url('/fonts/bebas-webfont.eot') format('embedded-opentype'),
+         url('/fonts/bebas-webfont.woff') format('woff'),
+         url('/fonts/bebas-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /*colors*/
-$gray-dark: #333333;
+$gray-darkest: #333333;
+$gray-darker: #868686;
+$white: #ffffff;
 
 /*font-sizes*/
 $bebas-big: 48px;

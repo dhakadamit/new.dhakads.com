@@ -3,19 +3,53 @@
 #header {
   height: 100px;
   border: {
-    top: 3px solid $gray-dark;
-    bottom: 3px solid $gray-dark;
+    top: 3px solid $gray-darkest;
+    bottom: 3px solid $gray-darkest;
   }
 
   #logo {
     padding: 20px 0px 20px 0px;
     font: {
-     family: 'OrbitronMedium';
+     family: 'OrbitronRegular';
      size: $bebas-big;
     }
   }
 }
 
 #footer {
-  background-color: $gray-dark;
+  background-color: $gray-darkest;
+
+  ul.navigation {
+    float: left;
+    margin-top: 30px;
+    padding: 0px 150px 0px 0px;
+    border-bottom: 1px solid $gray-darker;
+    height: 20px;
+
+    font: {
+      size: $bebas-small;
+      family: 'BebasRegular';
+    }
+
+    li {
+      float: left;
+      padding: 0px 10px 4px 10px;
+      list-style: none outside none;
+      text-align: center;
+
+      a {
+        color: $gray-darker;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &:hover {
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
 }
