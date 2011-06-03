@@ -43,17 +43,18 @@
     font-family: 'BebasRegular'; }
     #footer ul.navigation li {
       float: left;
-      padding: 0px 10px 4px 10px;
       list-style: none outside none;
       text-align: center; }
       #footer ul.navigation li a {
+        padding: 0px 10px 5px 10px;
         color: #868686;
         text-decoration: none;
-        text-align: center; }
+        text-align: center;
+        border-bottom: 1px solid transparent; }
         #footer ul.navigation li a:hover {
-          color: white; }
-      #footer ul.navigation li:hover {
-        border-bottom: 1px solid white; }
+          color: white;
+          border-bottom: 1px solid white;
+          -webkit-transition: all 1s ease-in-out 0s; }
   #footer .credit_label {
     margin-top: 30px;
     padding: 0px 10px 0px 150px;
