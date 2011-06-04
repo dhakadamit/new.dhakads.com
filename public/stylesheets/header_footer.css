@@ -29,18 +29,52 @@
     padding: 20px 0px 20px 0px;
     font-family: 'OrbitronRegular';
     font-size: 48px; }
-
-#footer {
-  background-color: #333333; }
-  #footer ul.navigation {
-    float: left;
-    margin-top: 30px;
+  #header ul.navigation {
     border-bottom: 1px solid #868686;
     height: 20px;
     word-spacing: 2px;
     font-size: 11px;
     font-family: 'BebasRegular';
-    padding-right: 150px; }
+    padding-left: 50px;
+    float: right;
+    margin: 10px 0px 10px 0px; }
+    #header ul.navigation li {
+      float: left;
+      list-style: none outside none;
+      text-align: center; }
+      #header ul.navigation li a {
+        padding: 0px 10px 5px 10px;
+        color: #868686;
+        text-decoration: none;
+        text-align: center;
+        border-bottom: 1px solid transparent; }
+        #header ul.navigation li a:hover {
+          color: white;
+          border-bottom: 1px solid white;
+          -webkit-transition: all 0.5s ease-in 0s;
+          -moz-transition: all 0.5s ease-in-out 0s;
+          -o-transition: all 0.5s ease-in-out 0s;
+          -ms-transition: all 0.5s ease-in-out 0s;
+          transition: all 0.5s ease-in-out; }
+    #header ul.navigation li a {
+      color: #333333; }
+      #header ul.navigation li a:hover {
+        color: #cc3333;
+        border-bottom: 1px solid #cc3333; }
+  #header .login_status {
+    height: 60px; }
+
+#footer {
+  background-color: #333333; }
+  #footer ul.navigation {
+    border-bottom: 1px solid #868686;
+    height: 20px;
+    word-spacing: 2px;
+    font-size: 11px;
+    font-family: 'BebasRegular';
+    padding-right: 150px;
+    float: left;
+    margin-top: 40px; }
     #footer ul.navigation li {
       float: left;
       list-style: none outside none;
@@ -54,20 +88,22 @@
         #footer ul.navigation li a:hover {
           color: white;
           border-bottom: 1px solid white;
-          -webkit-transition: all 1s ease-in-out 0s; }
+          -webkit-transition: all 0.5s ease-in 0s;
+          -moz-transition: all 0.5s ease-in-out 0s;
+          -o-transition: all 0.5s ease-in-out 0s;
+          -ms-transition: all 0.5s ease-in-out 0s;
+          transition: all 0.5s ease-in-out; }
   #footer .credit_label {
-    float: left;
-    margin-top: 30px;
     border-bottom: 1px solid #868686;
     height: 20px;
     word-spacing: 2px;
     font-size: 11px;
     font-family: 'BebasRegular';
+    margin-top: 40px;
     float: right;
     padding: 0px 13px 0px 150px;
     text-align: right;
-    color: white;
-    right: 1px; }
+    color: white; }
   #footer .credit {
     margin-top: 15px;
     color: #868686;
