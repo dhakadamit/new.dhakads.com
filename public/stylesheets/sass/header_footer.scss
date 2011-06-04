@@ -16,21 +16,25 @@
   }
 }
 
+@mixin navigation_bar {
+  float: left;
+  margin-top: 30px;
+  border-bottom: 1px solid $gray-darker;
+  height: 20px;
+  word-spacing: $bebas-word-spacing;
+
+  font: {
+    size: $bebas-small;
+    family: 'BebasRegular';
+  }
+}
+
 #footer {
   background-color: $gray-darkest;
 
   ul.navigation {
-    float: left;
-    margin: 30px 0px 0px 0px;
-    padding: 0px 150px 0px 0px;
-    border-bottom: 1px solid $gray-darker;
-    height: 20px;
-    word-spacing: $bebas-word-spacing;
-
-    font: {
-      size: $bebas-small;
-      family: 'BebasRegular';
-    }
+    @include navigation_bar;
+    padding-right: 150px;
 
     li {
       float: left;
@@ -54,22 +58,20 @@
     }
   }
 
-  .credit_label {
-    margin-top: 30px;
-    padding: 0px 10px 0px 150px;
-    border-bottom: 1px solid $gray-darker;
-    height: 20px;
-    word-spacing: $bebas-word-spacing;
-    color: $white;
+  .credit_note {
+  }
 
-    font: {
-      size: $bebas-small;
-      family: 'BebasRegular';
-    }
+  .credit_label {
+    @include navigation_bar;
+    float: right;
+    padding: 0px 13px 0px 150px;
+    text-align: right;
+    color: $white;
+    right:1px;
   }
 
   .credit {
-    padding: 10px 15px 0px 150px;
+    margin-top: 15px;
     color: $gray-darker;
 
     font: {
@@ -77,8 +79,23 @@
       family: 'DroidSansRegular';
     }
 
-    .label {
-      color: $white;
+
+    ul {
+      float: right;
+      padding-right: 10px;
+      li {
+        list-style: none outside none;
+        text-align: left;
+
+
+        .label {
+          color: $white;
+        }
+      }
+
+      li.name {
+        padding-bottom: 5px;
+      }
     }
   }
 

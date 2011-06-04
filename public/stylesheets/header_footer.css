@@ -34,13 +34,13 @@
   background-color: #333333; }
   #footer ul.navigation {
     float: left;
-    margin: 30px 0px 0px 0px;
-    padding: 0px 150px 0px 0px;
+    margin-top: 30px;
     border-bottom: 1px solid #868686;
     height: 20px;
     word-spacing: 2px;
     font-size: 11px;
-    font-family: 'BebasRegular'; }
+    font-family: 'BebasRegular';
+    padding-right: 150px; }
     #footer ul.navigation li {
       float: left;
       list-style: none outside none;
@@ -56,18 +56,30 @@
           border-bottom: 1px solid white;
           -webkit-transition: all 1s ease-in-out 0s; }
   #footer .credit_label {
+    float: left;
     margin-top: 30px;
-    padding: 0px 10px 0px 150px;
     border-bottom: 1px solid #868686;
     height: 20px;
     word-spacing: 2px;
-    color: white;
     font-size: 11px;
-    font-family: 'BebasRegular'; }
+    font-family: 'BebasRegular';
+    float: right;
+    padding: 0px 13px 0px 150px;
+    text-align: right;
+    color: white;
+    right: 1px; }
   #footer .credit {
-    padding: 10px 15px 0px 150px;
+    margin-top: 15px;
     color: #868686;
     font-size: 11px;
     font-family: 'DroidSansRegular'; }
-    #footer .credit .label {
-      color: white; }
+    #footer .credit ul {
+      float: right;
+      padding-right: 10px; }
+      #footer .credit ul li {
+        list-style: none outside none;
+        text-align: left; }
+        #footer .credit ul li .label {
+          color: white; }
+      #footer .credit ul li.name {
+        padding-bottom: 5px; }
