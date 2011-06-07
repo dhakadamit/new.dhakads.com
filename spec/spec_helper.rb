@@ -32,7 +32,10 @@ Spork.prefork do
 end
 
 Spork.each_run do
-  # This code will be run each time you run your specs.
+  require 'factory_girl_rails'
+  Factory.factories.clear
+  Dir[Rails.root.join("spec/factories/**/*.rb")].each{|f| load f}
+  NewDhakadsCom::Application.reload_routes!
 end
 
 # --- Instructions ---
