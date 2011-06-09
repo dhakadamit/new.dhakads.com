@@ -1,0 +1,83 @@
+@import "constants";
+
+body {
+  color: $gray-darkest;
+  font: {
+    family: "DroidSansRegular";
+    size: $droid-sans-m;
+  }
+}
+
+h1 {
+  font: {
+    size: $droid-sans-xxl;
+  }
+}
+
+.form_container {
+  margin-top: 100px;
+
+  form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .form_row {
+      margin-bottom: 20px;
+      overflow: hidden;
+
+      input[type=text], input[type=password] {
+        width: 95%;
+        border: 2px solid $gray-darker;
+        padding: 3px 5px 3px 5px;
+        background-color: $baige-light;
+        font: {
+          size: $droid-sans-l;
+        }
+      }
+
+      .label {
+        text-align: right;
+        font: {
+          size: $droid-sans-m;
+        }
+        padding-top: 7px;
+      }
+    }
+
+    h1{
+      margin-bottom: 40px;
+    }
+
+    .submit_row {
+      padding-top: 10px;
+
+      .alternate_link {
+        margin-left: 10px;
+        color: $blue;
+        font: {
+          size: $droid-sans-s;
+        }
+
+        a {
+          color: $blue;
+        }
+      }
+    }
+
+    .primary_button {
+      color: $gray-darkest;
+      border: none;
+      padding: 5px 15px;
+      background: url('/images/arrow_button.png') center right no-repeat fixed $orange;
+
+      font: {
+        family: "BebasRegular";
+        size: 15px;
+      }
+    }
+  }
+}
+
+.baige_container {
+  background-color: $baige-light;
+}

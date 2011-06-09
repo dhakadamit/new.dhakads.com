@@ -1,7 +1,35 @@
-<% form_for :session do |f| %>
+<div class="form_container baige_container grid_8 push_2">
+  <% form_for :session, :url => sessions_path, :html => {:class => "push_1 grid_6 omega alpha"} do |f| %>
 
-  <%= f.text_field :email %>
-  <%= f.password_field :email %>
-  <%= f.submit ""
+    <h1>
+      Login
+    </h1>
 
-<% end %>
+    <div class="errors"></div>
+    <div class="form_row">
+      <div class="grid_1 label alpha label">
+        <%= f.label :email %>
+      </div>
+      <div class="grid_5 omega">
+        <%= f.text_field :email %>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="grid_1 alpha label">
+        <%= f.label :password %>
+      </div>
+      <div class="grid_5 omega">
+        <%= f.password_field :password %>
+      </div>
+    </div>
+
+    <div class="form_row submit_row">
+      <div class="push_1 grid_4 alpha">
+        <%= f.submit "Submit", :class=>"primary_button" %>
+        <span class="alternate_link">Or <%= link_to "Request for a new account" %></span>
+      </div>
+    </div>
+
+  <% end %>
+</div>

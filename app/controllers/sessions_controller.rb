@@ -4,4 +4,8 @@ class SessionsController < ApplicationController
 
     @user_session = UserSession.new
   end
+
+  def create
+    head :ok
+  end
 end

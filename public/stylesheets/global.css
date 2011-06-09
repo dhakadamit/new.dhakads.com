@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'OrbitronRegular';
+  src: url("/fonts/orbitron-regular-webfont.eot");
+  src: url("/fonts/orbitron-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/orbitron-regular-webfont.woff") format("woff"), url("/fonts/orbitron-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BebasRegular';
+  src: url("/fonts/bebas-webfont.eot");
+  src: url("/fonts/bebas-webfont.eot") format("embedded-opentype"), url("/fonts/bebas-webfont.woff") format("woff"), url("/fonts/bebas-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DroidSansRegular';
+  src: url("/fonts/droidsans-webfont.eot");
+  src: url("/fonts/droidsans-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/droidsans-webfont.woff") format("woff"), url("/fonts/droidsans-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*colors*/
+/*font-sizes*/
+body {
+  color: #333333;
+  font-family: "DroidSansRegular";
+  font-size: 15px; }
+
+h1 {
+  font-size: 35px; }
+
+.form_container {
+  margin-top: 100px; }
+  .form_container form {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .form_container form .form_row {
+      margin-bottom: 20px;
+      overflow: hidden; }
+      .form_container form .form_row input[type=text], .form_container form .form_row input[type=password] {
+        width: 95%;
+        border: 2px solid #868686;
+        padding: 3px 5px 3px 5px;
+        background-color: #dddbcc;
+        font-size: 18px; }
+      .form_container form .form_row .label {
+        text-align: right;
+        font-size: 15px;
+        padding-top: 7px; }
+    .form_container form h1 {
+      margin-bottom: 40px; }
+    .form_container form .submit_row {
+      padding-top: 10px; }
+      .form_container form .submit_row .alternate_link {
+        margin-left: 10px;
+        color: #4986a9;
+        font-size: 13px; }
+        .form_container form .submit_row .alternate_link a {
+          color: #4986a9; }
+    .form_container form .primary_button {
+      color: #333333;
+      border: none;
+      padding: 5px 15px;
+      background: url("/images/arrow_button.png") center right no-repeat fixed #e2802d;
+      font-family: "BebasRegular";
+      font-size: 15px; }
+
+.baige_container {
+  background-color: #dddbcc; }

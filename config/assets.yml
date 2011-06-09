@@ -7,8 +7,8 @@ javascripts:
 
 stylesheets:
   global:
-    - public/stylesheets/960.css
     - public/stylesheets/reset.css
+    - public/stylesheets/960.css
 
   app:
     - public/stylesheets/header_footer.css

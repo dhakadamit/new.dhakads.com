@@ -30,4 +30,11 @@ describe SessionsController do
     end
   end
 
+  describe "create" do
+    it "should respond with success" do
+      post :create
+      response.should be_success
+    end
+  end
+
 end
