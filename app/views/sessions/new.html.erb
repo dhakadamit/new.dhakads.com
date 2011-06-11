@@ -1,11 +1,14 @@
 <div class="form_container baige_container grid_8 push_2">
-  <% form_for :session, :url => sessions_path, :html => {:class => "push_1 grid_6 omega alpha"} do |f| %>
+  <% form_for :user_session, :url => sessions_path, :html => {:class => "push_1 grid_6 omega alpha"} do |f| %>
 
     <h1>
       Login
     </h1>
 
-    <div class="errors"></div>
+    <div class="base_error">
+      <%= display_errors_for :base, @user_session.errors %>
+    </div>
+
     <div class="form_row">
       <div class="grid_1 label alpha label">
         <%= f.label :email %>
@@ -13,6 +16,7 @@
       <div class="grid_5 omega">
         <%= f.text_field :email %>
       </div>
+      <%= display_errors_for :base, @user_session.errors %>
     </div>
 
     <div class="form_row">

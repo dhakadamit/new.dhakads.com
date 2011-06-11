@@ -1,5 +1,13 @@
 @import "constants";
 
+@mixin error {
+  color: $red;
+  word-wrap: break-word;
+  font: {
+    size: $droid-sans-xs;
+  }
+}
+
 body {
   color: $gray-darkest;
   font: {
@@ -21,12 +29,19 @@ h1 {
     margin-top: 40px;
     margin-bottom: 40px;
 
+    .base_error {
+      margin-top: -15px;
+      margin-bottom: 15px;
+      @include error;
+      overflow: hidden;
+    }
+
     .form_row {
       margin-bottom: 20px;
       overflow: hidden;
 
       input[type=text], input[type=password] {
-        width: 95%;
+        color: $gray-darkest;
         border: 2px solid $gray-darker;
         padding: 3px 5px 3px 5px;
         background-color: $baige-light;
@@ -37,10 +52,16 @@ h1 {
 
       .label {
         text-align: right;
-        font: {
-          size: $droid-sans-m;
-        }
         padding-top: 7px;
+      }
+
+      input[type=text], input[type=password], .errors {
+        width: 95%;
+      }
+
+      .errors {
+        padding-top: 5px;
+        @include error;
       }
     }
 
@@ -72,9 +93,10 @@ h1 {
 
       font: {
         family: "BebasRegular";
-        size: 15px;
+        size: $bebas-m;
       }
     }
+
   }
 }
 

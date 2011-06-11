@@ -6,7 +6,7 @@
   word-spacing: $bebas-word-spacing;
 
   font: {
-    size: $bebas-small;
+    size: $bebas-s;
     family: 'BebasRegular';
   }
 }
@@ -51,7 +51,7 @@
     padding: 20px 0px 20px 0px;
     font: {
      family: 'OrbitronRegular';
-     size: $bebas-big;
+     size: $bebas-b;
     }
   }
 
@@ -100,7 +100,7 @@
     color: $gray-darker;
 
     font: {
-      size: $small;
+      size: $droid-sans-xs;
       family: 'DroidSansRegular';
     }
 

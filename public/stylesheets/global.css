@@ -34,19 +34,32 @@ h1 {
   .form_container form {
     margin-top: 40px;
     margin-bottom: 40px; }
+    .form_container form .base_error {
+      margin-top: -15px;
+      margin-bottom: 15px;
+      color: #cc3333;
+      word-wrap: break-word;
+      font-size: 11px;
+      overflow: hidden; }
     .form_container form .form_row {
       margin-bottom: 20px;
       overflow: hidden; }
       .form_container form .form_row input[type=text], .form_container form .form_row input[type=password] {
-        width: 95%;
+        color: #333333;
         border: 2px solid #868686;
         padding: 3px 5px 3px 5px;
         background-color: #dddbcc;
         font-size: 18px; }
       .form_container form .form_row .label {
         text-align: right;
-        font-size: 15px;
         padding-top: 7px; }
+      .form_container form .form_row input[type=text], .form_container form .form_row input[type=password], .form_container form .form_row .errors {
+        width: 95%; }
+      .form_container form .form_row .errors {
+        padding-top: 5px;
+        color: #cc3333;
+        word-wrap: break-word;
+        font-size: 11px; }
     .form_container form h1 {
       margin-bottom: 40px; }
     .form_container form .submit_row {
