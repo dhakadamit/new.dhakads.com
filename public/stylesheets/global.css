@@ -73,8 +73,8 @@ h1 {
     .form_container form .primary_button {
       color: #333333;
       border: none;
-      padding: 5px 15px;
-      background: url("/images/arrow_button.png") center right no-repeat fixed #e2802d;
+      padding: 5px 25px 5px 15px;
+      background: url("/images/arrow_button.png") 95% 55% no-repeat scroll #e2802d;
       font-family: "BebasRegular";
       font-size: 15px; }
 

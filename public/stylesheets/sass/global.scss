@@ -88,8 +88,8 @@ h1 {
     .primary_button {
       color: $gray-darkest;
       border: none;
-      padding: 5px 15px;
-      background: url('/images/arrow_button.png') center right no-repeat fixed $orange;
+      padding: 5px 25px 5px 15px;
+      background: url('/images/arrow_button.png') 95% 55% no-repeat scroll $orange;
 
       font: {
         family: "BebasRegular";
